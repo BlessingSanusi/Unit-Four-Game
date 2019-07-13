@@ -8,6 +8,19 @@ body {
   color: rgb(247, 233, 47);
 }
 
+/* .randomNumber {
+  border: 3px solid red;
+  width: 320px;
+  height: 100px;
+  text-align: center;
+}
+
+.scores {
+  border: 3px solid palevioletred;
+  width: 200px;
+  height: 150px;
+  text-align: center;
+} */
 .crystals {
   clear: both;
 }

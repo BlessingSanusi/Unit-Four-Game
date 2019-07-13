@@ -1,14 +1,14 @@
 $(document).ready(function() {
-  var compRandom = Math.floor(Math.random() * 155 + 30);
+  var compRandom = Math.floor(Math.random() * 200);
   // computer picks a random number to be shown at the start of the game
 
   $("#randNum").text(compRandom);
   // Appending random number to the randnum div
 
-  var num1 = Math.floor(Math.random() * 14 + 1);
-  var num2 = Math.floor(Math.random() * 14 + 1);
-  var num3 = Math.floor(Math.random() * 14 + 1);
-  var num4 = Math.floor(Math.random() * 14 + 1);
+  var num1 = Math.floor(Math.random() * 15) + 5;
+  var num2 = Math.floor(Math.random() * 20) + 10;
+  var num3 = Math.floor(Math.random() * 25) + 10;
+  var num4 = Math.floor(Math.random() * 30) + 15;
   // Setting up random numbers for each crystals
 
   var userTotal = 0;
@@ -19,26 +19,26 @@ $(document).ready(function() {
   $("#numLosses").text(losses);
   //resets the game
   function reset() {
-    compRandom = Math.floor(Math.random() * 155 + 30);
+    compRandom = Math.floor(Math.random() * 200);
     console.log(compRandom);
-    $("#randNumb").text(compRandom);
-    num1 = Math.floor(Math.random() * 14 + 1);
-    num2 = Math.floor(Math.random() * 14 + 1);
-    num3 = Math.floor(Math.random() * 14 + 1);
-    num4 = Math.floor(Math.random() * 14 + 1);
+    $("#randNum").text(compRandom);
+    num1 = Math.floor(Math.random() * 15) + 5;
+    num2 = Math.floor(Math.random() * 20) + 10;
+    num3 = Math.floor(Math.random() * 25) + 10;
+    num4 = Math.floor(Math.random() * 30) + 15;
     userTotal = 0;
     $("#finalTotal").text(userTotal);
   }
   //incrementing wins
   function win() {
-    alert("You won!");
+    alert("Congratulation!!! You won");
     wins++;
     $("#numWins").text(wins);
     reset();
   }
   //incrementing losses
   function lose() {
-    alert("You lose!");
+    alert("Unfortunately, you lost!");
     losses++;
     $("#numLosses").text(losses);
     reset();
